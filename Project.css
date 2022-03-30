@@ -64,6 +64,7 @@ body {
   
   nav ul li a:hover {
     background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
   }
   
   /* Menu-toggle opmaken */
