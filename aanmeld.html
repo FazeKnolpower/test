@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="aanmeld.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aanmeld</title>
+</head>
+<body>
+    <div class="wrapper"> 
+        <header>
+            <nav>
+              <label for="menu" class="toggle">&#9776;</label>
+              <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="inloggen.html">Inloggen</a></li>
+                <li><a href="aanmelden.html">Aanmelden</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+</body>
+</html>
+
+<form action="action_page.php" method="post">
+    <div class="imgcontainer">
+      <img src="projectfoto.png" alt="" class="avatar">
+    </div>
+  
+    <div class="container">
+      <label for="uname"><b>Gebruikersnaam</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+  
+      <label for="psw"><b>Wachtwoord</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+  
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> onthoud me 
+      </label>
+    </div>
+  
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" class="cancelbtn">Stoppen</button>
+      <span class="psw">Wachtwoord <a href="#">Vergeten?</a></span>
+    </div>
+  </form>
