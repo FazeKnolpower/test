@@ -1,0 +1,234 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 53px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 1em;  
+    height: 100%;  
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .wrapper {
+    max-width: auto;
+    height: auto;
+    margin:  auto;
+    display: grid;
+    grid-template-areas: 
+      "header header header header"
+      "main main main aside"
+      "footer footer footer footer";
+    grid-template-rows: 80px 1fr 20px;
+    grid-template-columns: repeat( 3, 1fr ) 240px;
+    grid-gap: 1em;
+  }
+  
+  
+  header {
+    grid-area: header;
+    background-color: #000000;
+  }
+  
+  main {
+    grid-area: main;
+  }
+
+  nav ul {
+    position: absolute;
+    width: 100%;
+    top: 80px;
+    max-height: 0;
+    overflow: hidden;	
+    transition: max-height .3s ease-in-out;
+    background: #ffffff;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: block;
+    text-align: right;
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+  
+  nav ul li a {
+    display: block;
+    padding-right: 20px;
+    height: 40px;
+    line-height: 40px;  
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  /* Menu-toggle opmaken */
+  nav .toggle {
+      display: block;
+      width: 80px;
+      height: 80px;
+      font-size: 1em;
+      font-weight: bold;
+      line-height: 80px;
+      text-align: center;
+      color: #fff;
+      float: right;
+      cursor: pointer;
+  }
+  
+  nav .toggle:hover {
+    color: #FEEFDD;
+  }
+  
+  /* Als de voorgaande checkbox (met id="menu") checked is, 
+   * dan wordt de 'max-height' van de ul (ons menu) verhoogd naar heel hoog
+   * zodat hij zichtbaar wordt.
+   */
+  [id=menu]:checked + ul {
+      max-height: 1000px;
+  }
+  
+  
+  
+  main {
+    padding: 20px;
+  }
+  
+  
+  
+  main .flex-wrapper {
+    display: flex;
+  }
+  
+  main .flex-wrapper .img {
+    display: inline-block;
+    flex-grow: 1;
+    margin: 0 20px;
+    min-width: 0;
+    min-height: auto;
+    height: auto;
+  }
+  
+  footer {
+    background: silver;
+  }
+  
+  
+  @media (max-width: 600px) {
+    
+    .wrapper {
+      grid-template-areas: 
+        "header"
+        "main"
+        "aside"
+        "footer";
+      grid-template-rows: 80px 1fr 1fr 100px;
+      grid-template-columns: 1fr;
+    }
+  
+  }
+  
+  
+  /* Small Devices, Tablets */
+  @media only screen and (min-width : 768px) {
+    
+    nav .toggle {
+      display: none;
+    }
+    
+    nav ul {
+      position: relative;
+      max-height: none;
+      float: right;
+      background: none;
+      top: auto;
+      width: auto;
+    }
+    
+    nav ul li {
+      display: inline-block; 
+      text-align: center;
+      border: 0;   
+    }
+    
+    nav ul li a {
+      padding: 0 10px;
+      line-height: 80px;
+      height: 80px;
+    }
+    
+    nav ul li a:hover {
+      color: #ffffff;    
+    }
+    
+    
+  }  
+
+  h2.headertekst {
+    text-align: center;
+  }
